@@ -1,0 +1,98 @@
+.welcome{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+  background: linear-gradient(to left,
+  orange,
+  brown,
+  red,
+  yellow,
+  blue,
+  violet)
+  ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px ;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #37eb3d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.pauseBtn{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pauseBtn:hover{
+  background-color: rgb(238, 61, 61);
+}
+
+.restartBtn{
+  background-color: rgb(184, 184, 8);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.restarBtn:hover{
+  background-color: yellowgreen;
+}
+.control {
+	text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+canvas {
+  background: #000;
+}
