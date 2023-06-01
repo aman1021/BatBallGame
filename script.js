@@ -9,7 +9,7 @@ var gameRunning = false;
 
 startBtn.addEventListener("click", function () {
   if (!gameRunning) {
-    gameRunning = true; 
+    gameRunning = true;
     loop();
   }
 });
@@ -27,7 +27,6 @@ addEventListener("load", (event) => {
   draw();
 });
 
-
 var ballRadius = 10;
 var ballX = canvas.width / 2;
 var ballY = canvas.height / 2;
@@ -38,22 +37,19 @@ var paddleHeight = 80;
 var paddleWidth = 10;
 var leftPaddleY = canvas.height / 2 - paddleHeight / 2;
 
-
 var paddleHitScore = 0;
 var missedScore = 0;
 var maxScore = 10;
 
 canvas.addEventListener("mousemove", function (e) {
   leftPaddleY = e.clientY - canvas.offsetTop;
- 
+
   if (leftPaddleY >= canvas.height - paddleHeight) {
     leftPaddleY = leftPaddleY - paddleHeight;
   }
 });
 
-
 function update() {
- 
   ballX += ballSpeedX;
   ballY += ballSpeedY;
 
@@ -85,6 +81,8 @@ function update() {
 
   if (missedScore >= 3 || paddleHitScore == maxScore) {
     document.location.reload();
+    missedScore = 0;
+    paddleHitScore = 0;
   }
 }
 
